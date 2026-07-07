@@ -86,11 +86,11 @@ export default function Hero() {
           <div className="relative w-64 h-64 md:w-96 md:h-96">
             <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-[spin_10s_linear_infinite]" />
             <div className="absolute inset-4 rounded-full border-2 border-secondary/30 animate-[spin_15s_linear_infinite_reverse]" />
-            <div className="absolute inset-8 rounded-full overflow-hidden glass p-2">
+            <div className="absolute inset-8 rounded-full overflow-hidden glass p-2 transition-transform duration-300 hover:scale-105">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000" 
+                src="/my_image.jpg" 
                 alt="Avatar" 
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-cover rounded-full transition-transform duration-300"
               />
             </div>
           </div>

@@ -36,6 +36,47 @@ body {
   background-color: var(--color-background);
   color: white;
   overflow-x: hidden;
+  cursor: none;
+}
+
+a, button, input, textarea, select, [role="button"], [data-interactive="true"] {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.18s ease, width 0.18s ease, height 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.active {
+  width: 46px;
+  height: 46px;
+  border-color: #06B6D4;
+  background-color: rgba(6, 182, 212, 0.15);
+}
+
+.custom-cursor.clicking {
+  transform: translate(-50%, -50%) scale(0.85);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+
+  .custom-cursor {
+    display: none;
+  }
 }
 
 /* Custom Scrollbar */
@@ -57,3 +98,28 @@ body {
 }
 
 /* Smooth Scrolling is handled by Lenis */
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}

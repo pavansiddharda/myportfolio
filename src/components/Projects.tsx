@@ -59,10 +59,10 @@ export default function Projects() {
               {/* Actions */}
               <div className="flex items-center justify-between pt-4 border-t border-white/10 mt-auto">
                 <div className="flex gap-4">
-                  <a href={project.github} className="text-gray-400 hover:text-white transition-colors">
+                  <a href={project.github} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     <FaGithub size={20} />
                   </a>
-                  <a href={project.live} className="text-gray-400 hover:text-primary transition-colors">
+                  <a href={project.live} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                     <FaExternalLinkAlt size={18} />
                   </a>
                 </div>

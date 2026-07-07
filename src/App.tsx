@@ -8,10 +8,14 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Research from './components/Research';
 import Certifications from './components/Certifications';
+import Hobbies from './components/Hobbies';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollProgressBar from './components/ScrollProgressBar';
+import { useEdgeSectionNavigation } from './hooks/useEdgeSectionNavigation';
 
 function App() {
+  useEdgeSectionNavigation();
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -36,6 +40,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#050816] text-white selection:bg-primary/30">
+      <ScrollProgressBar />
       <Navbar />
       <main>
         <Hero />
@@ -45,6 +50,7 @@ function App() {
         <Projects />
         <Research />
         <Certifications />
+        <Hobbies />
         <Contact />
       </main>
       <Footer />

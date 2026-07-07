@@ -5,14 +5,14 @@ import {
   FaPython,
   FaJava,
 } from 'react-icons/fa';
-import { SiMongodb, SiTailwindcss, SiScikitlearn, SiExpress, SiCplusplus, SiJavascript, SiHtml5, SiCss, SiNumpy, SiPandas, SiGit } from 'react-icons/si';
+import { SiMongodb, SiTailwindcss, SiScikitlearn, SiExpress, SiCplusplus, SiJavascript, SiHtml5, SiCss, SiNumpy, SiPandas, SiGit, SiDocker } from 'react-icons/si';
 
 export const personalInfo = {
   name: 'Pavan Siddharda Bachina',
   subtitle: ['Computer Science Undergraduate', 'Machine Learning Engineer', 'Full Stack Developer', 'Research Enthusiast'],
   introduction: 'Computer Science undergraduate with strong skills in Machine Learning, Backend Development, Full Stack Development, and Artificial Intelligence. Experienced in building scalable web applications, AI-powered solutions, REST APIs, Machine Learning models, and research-oriented projects.',
-  email: 'pavansiddharda@gmail.com', // Placeholder, update if needed
-  phone: '+91 9999999999', // Placeholder
+  email: 'sidhubachina11t@gmail.com', // Placeholder, update if needed
+  phone: '+91 9052442005', // Placeholder
   github: 'https://github.com/PavanSiddharda', // Update if needed
   linkedin: 'https://linkedin.com/in/pavansiddharda', // Update if needed
   leetcode: 'https://leetcode.com/pavansiddharda', // Update if needed
@@ -28,7 +28,7 @@ export const education = {
 export const skills = {
   Programming: [
     { name: 'C++', icon: SiCplusplus, color: '#00599C' },
-    { name: 'Core Java', icon: FaJava, color: '#007396' },
+    { name: 'Java', icon: FaJava, color: '#007396' },
     { name: 'Python', icon: FaPython, color: '#3776AB' },
     { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
   ],
@@ -42,6 +42,7 @@ export const skills = {
     { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
     { name: 'Express.js', icon: SiExpress, color: '#000000' },
     { name: 'REST APIs', icon: null, color: '#8B5CF6' },
+    {name:   'spring Boot-Basics', icon: null, color: '#6DB33F' }
   ],
   Database: [
     { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
@@ -59,6 +60,7 @@ export const skills = {
   Tools: [
     { name: 'Git', icon: SiGit, color: '#F05032' },
     { name: 'GitHub', icon: FaGithub, color: '#FFFFFF' },
+    { name: 'Docker', icon: SiDocker, color: '#2496ED' },
     { name: 'VS Code', icon: null, color: '#007ACC' },
   ]
 };
@@ -104,7 +106,7 @@ export const projects = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'REST APIs'],
     highlights: ['Authentication', 'MVC', 'Dashboard', 'Recommendations'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000',
-    github: '#',
+    github: 'https://github.com/pavansiddharda/SkillgapAnalysis_MERNSTACK',
     live: '#',
   },
   {
@@ -114,7 +116,7 @@ export const projects = [
     tech: ['Python', 'Scikit Learn', 'Pandas', 'NumPy', 'Streamlit'],
     highlights: ['KMeans', 'DBSCAN', 'Classification', 'Healthcare Prediction'],
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1000',
-    github: '#',
+    github: 'https://github.com/pavansiddharda/FITPULSE',
     live: '#',
   },
   {
@@ -124,7 +126,7 @@ export const projects = [
     tech: ['Python', 'Machine Learning', 'Random Forest', 'Decision Tree', 'KNN', 'Logistic Regression'],
     highlights: ['Classification Algorithms', 'Predictive Modeling'],
     image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1000',
-    github: '#',
+    github: 'https://github.com/pavansiddharda/LOAN-APPROVAL-PREDITCTION-USING-ML',
     live: '#',
   },
   {
@@ -134,7 +136,17 @@ export const projects = [
     tech: ['Python', 'SpeechRecognition', 'Google Translate', 'gTTS', 'PyAudio'],
     highlights: ['Speech-to-Text', 'Translation', 'Text-to-Speech', 'Real-Time Processing', 'Multiple Languages'],
     image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=1000',
-    github: '#',
+    github: 'https://github.com/pavansiddharda/python',
+    live: '#',
+  },
+  {
+    id: 6,
+    name: 'Resume Builder',
+    description: 'Full-stack CRUD application for creating, editing, and managing professional resumes. Features real-time preview, PDF export, and responsive design with JSON-Server backend.',
+    tech: ['React', 'React Router', 'Tailwind CSS', 'Axios', 'JSON-Server', 'Vite'],
+    highlights: ['Full CRUD Operations', 'PDF Export', 'Real-time Preview', 'Form Validation', 'Responsive Design'],
+    image: '/resume builder project.png',
+    github: 'https://github.com/pavansiddharda/FSD-resume-builder',
     live: '#',
   }
 ];
@@ -178,5 +190,20 @@ export const certifications = [
     name: 'Infosys Springboard Internship',
     organization: 'Infosys',
     link: 'https://drive.google.com/file/d/1KVE911ldRzDZf-yj1ZFEicwPkzdNSuhJ/view?usp=sharing'
+  }
+];
+
+export const hobbies = [
+  {
+    id: 1,
+    name: 'Playing Badminton',
+    description: 'Passionate about badminton, enjoy competitive play and fitness.',
+    icon: '🏸'
+  },
+  {
+    id: 2,
+    name: 'Playing Cricket',
+    description: 'Cricket enthusiast who enjoys both casual and competitive matches.',
+    icon: '🏏'
   }
 ];
